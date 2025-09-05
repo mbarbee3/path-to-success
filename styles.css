@@ -1,9 +1,113 @@
 /* CSS BY Matt Barbee */
 
 /* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
 /* CSS RESET */
 
 /* ROOT VARIABLES */
+:root {
+    --body-font: Inter, Arial, sans-serif;
+    --h1-font: Kavoon;
+
+    --backgroundBlue: #6B8FE7;
+    --darkerBackgroundBlue: #484FB7;
+    --tealBlock: #4CA7C0;
+    --yellowBlock: #E9BB57;
+    --backgroundPink: #D9526F;
+    --grayColor: #1E1E1E;
+    --whiteColor: #ffffff;
+}
 
 /* GLOBAL STYLES (mobile first/small) */
+body {
+    font-family: var(--body-font);
+    background-color: var(--backgroundBlue);
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: var(--h1-font);
+    font-size: 3em;
+}
+
+h2 {
+    font-family: var(--h1-font);
+    font-size: 2em;
+    color: var(--whiteColor);
+}
+
+h3 {
+    font-size: 1.5em;
+    color: var(--yellowBlock);
+}
+
+h4 {
+    font-size: 1.15em;
+    color: var(--darkerBackgroundBlue);
+}
+
+header {
+    background-color: var(--darkerBackgroundBlue);
+    color: var(--whiteColor);
+    text-align: center;
+}
+
+header h2 {
+    font-size: 1.5em;
+    font-family: var(--body-font);
+    color: var(--grayColor);
+    padding-top: 10px;
+}
+
+header p, header h2 {
+    font-style: italic;
+}
+
+header ul {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 10px;
+}
+
+header ul a {
+    font-size: 1.5em;
+    font-family: var(--body-font);
+    color: var(--darkerBackgroundBlue);
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    background-color: var(--whiteColor);
+    margin: 10px;
+    padding: 5px;
+}
+
+#menuSection {
+    background-color: var(--yellowBlock);
+    padding: auto;
+}
+
+#ourServices {
+    background-color: var(--darkerBackgroundBlue);
+}
+
+.highlightSquare  {
+    background-color: var(--whiteColor);
+}
+
+#whyChooseUs {
+    background-color: var(--backgroundPink);
+}
+
+#prices {
+    background-color: var(--darkerBackgroundBlue);
+}
+
+#takeFirstSteps {
+    background-color: var(--backgroundPink);
+}
+
+footer {
+    background-color: var(--darkerBackgroundBlue);
+}
